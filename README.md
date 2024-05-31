@@ -18,17 +18,17 @@
 
 - [X] Setup file structure.
 
-- [] Setup a PostgreSQL Container.
+- [X] Setup a PostgreSQL Container.
 
-- [] Design Tables for the database schema.
+- [X] Design Tables for the database schema.
 
-- [] Write Scripts to set up the databases and tables.
+- [X] Write Scripts to set up the databases and tables.
 
 - [] Develop the Identify API endpoint.
 
 - [] Containerize the application for deployment.
 
-- [] Writing the Docker Compose file.
+- [X] Writing the Docker Compose file.
 
 - [] Deploy in AWS
 
