@@ -1,0 +1,33 @@
+{
+  "name": "bitespeed",
+  "version": "1.0.0",
+  "description": "bitespeed hiring test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivindeena/bitespeed.git"
+  },
+  "author": "Vivin D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivindeena/bitespeed/issues"
+  },
+  "homepage": "https://github.com/vivindeena/bitespeed#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "pg-format": "^1.0.4"
+  }
+}
