@@ -24,9 +24,9 @@
 
 - [X] Write Scripts to set up the databases and tables.
 
-- [] Develop the Identify API endpoint.
+- [X] Develop the Identify API endpoint.
 
-- [] Containerize the application for deployment.
+- [X] Containerize the application for deployment.
 
 - [X] Writing the Docker Compose file.
 
