@@ -37,9 +37,7 @@ const identify = async (req, res) => {
 				}
 			});
 		} else if ((fetchResult.rows.length === 1 && fetchResult.rows[0].linkprecedence === "secondary") || email ==='null' || phoneNumber === 'null') {
-			console.log(fetchResult.rows)
 			const primaryContactId = fetchResult.rows[0].linkedid || fetchResult.rows[0].id;
-			console.log(primaryContactId)
 			const secondaryFetchQuery = format(
 				"SELECT * FROM contact WHERE linkedId = %L OR id = %L ORDER BY linkprecedence, createdAt",
 				primaryContactId,
@@ -64,12 +62,6 @@ const identify = async (req, res) => {
 				},
 			});
 		} else if (fetchResult.rows.length === 1) {
-			console.log(
-				fetchResult.rows[0].email,
-				email,
-				fetchResult.rows[0].phonenumber,
-				phoneNumber
-			);
 			const primaryContactId = fetchResult.rows[0].id;
 			emails.add(fetchResult.rows[0].email);
 			phoneNumbers.add(fetchResult.rows[0].phonenumber);
