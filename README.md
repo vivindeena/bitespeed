@@ -18,7 +18,7 @@
 3. **Change Directories:**
    - Switch to the cloned directory, and then to the setup folder:
      ```bash
-     cd gyangrove/setups/
+     cd bitespeed/setups/
      ```
 
 4. **Environment Variables Setup:**
