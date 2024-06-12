@@ -1,5 +1,3 @@
-require("dotenv").config({path:"../setup/.env"});
-
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -22,12 +20,12 @@ app.get("/", async (req, res) => {
 		console.log(error);
 		res.status(500).json({
 			message: "Database connection failed",
+			error: error,
 		});
 	} finally {
 		client.release();
 	}
 });
-
 app.use("/identify", identify);
 
 app.listen(process.env.PORT, () => {

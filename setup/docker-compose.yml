@@ -1,24 +1,24 @@
 services:
   db:
-    image: db-image
-    container_name: my_postgres_db
+    image: bitespeed-db-image
     restart: always
+    container_name: contact-db-container
     environment:
+      POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_ADMIN_USER}
       POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
-      - postgresDB_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
   app:
-    image: app-image
-    container_name: event-app-container
+    image: bitespeed-app-image
+    container_name: contact-app-container
     environment:
       - TZ=UTC
       - POSTGRES_HOST=db
-      - PORT=3000
     env_file:
       - ./.env
     ports:
-      - "${PORT}:3000"
+      - "${PORT}:${PORT}"
+
 volumes:
-  postgresDB_data:
+  postgres_data:
