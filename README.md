@@ -2,7 +2,7 @@
 
 ## Backend Documentation: [Click here :bookmark_tabs:](https://documenter.getpostman.com/view/21780682/2sA3XMjj8d)
 
-## Deployed Link: (Deployed on AWS EC2 instances :cloud:) [ec2-3-110-216-182.ap-south-1.compute.amazonaws.com](ec2-3-110-216-182.ap-south-1.compute.amazonaws.com)
+## Deployed Link: (Deployed on AWS EC2 instances :cloud:) [ec2-54-147-62-190.compute-1.amazonaws.com](ec2-54-147-62-190.compute-1.amazonaws.com)
 
 ## Running Project Locally
 
