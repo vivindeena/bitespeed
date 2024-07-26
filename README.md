@@ -2,7 +2,7 @@
 
 ## Backend Documentation: [Click here :bookmark_tabs:](https://documenter.getpostman.com/view/21780682/2sA3XMjj8d)
 
-mm## Deployed Link: (Deployed on AWS EC2 instances :cloud:) Deployment Closed
+## Deployed Link: (Deployed on AWS EC2 instances :cloud:) Deployment Closed
 
 ## Running Project Locally
 
